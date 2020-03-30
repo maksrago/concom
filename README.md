@@ -1,7 +1,7 @@
 **Live site:** [concom.live](https://concom.live)
 
 ConCom is the offical frontend for [concom.live](https://concom.live), this frontend is extemely functional,
-lightweight.
+and lightweight.
 
 ## Features
 *ConCom features several additions to PenumbraLynx, such as:*
