@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script type="text/javascript" id="dynamicAnalytics"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/.static/css/global.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/index.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/boards.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/watcher.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/posting.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+	<script src="/.static/js/themeLoader.js"></script>
+
+	<nav id="dynamicHeader"></nav>
+
+	<div id="preventErrors">
+	</span> <a class="coloredIcon" id="linkOverboard"></a> <span>/</span> <a id="linkSfwOver"></a>
+	</div>
+
+	<div id="indexWrapper">
+
+            <div id="logoBox" class="title">
+		<a href="/">
+		    <img src="/.static/logo.png" class="logoImg" alt="logo" />
+		</a>
+            </div>
+
+	    <div id="dynamicLinks"></div>
+
+	    <div class="contentBox">
+		<h2>Boards</h2>
+		<div id="contentBoxInner" class="boardsPage">
+
+		    <div class="search">
+			<form
+			    action="/boards.js"
+			    method="get">
+			    <div id="boardsSort">
+				<select name="sorting">
+				    <option value=''>Most popular</option>
+				    <option value='1'>Least popular</option>
+				    <option value='2'>Most posts first</option>
+				    <option value='3'>Least posts first</option>
+				    <option value='4'>Highest PPH first</option>
+				    <option value='5'>Lowest PPH first</option>
+				    <option value='6'>Alphabetic order</option>
+				    <option value='7'>Reverse alphabetic order</option>
+				</select>
+			    </div>
+
+			    <input
+				type="submit"
+				value="search"
+				id="searchButton">
+			</form>
+		    </div>
+
+		    <div
+			id="divBoards"
+			class="wide">
+			<span id="divBoardsLegend">
+			    <span
+				id="labelName"
+				class="cellComponent">Name</span>
+			    <span
+				id="labelPPH"
+				class="cellComponent">PPH</span>
+			    <span
+				id="labelPosts"
+				class="cellComponent">Posts</span>
+			</span>
+		    </div>
+
+		    <span class="boardPages"><div id="divPages"></div></span>
+
+		</div>
+	    </div>
+
+	    <footer id="dynamicFooterAlt"></footer>
+    </body>
+    <script src="/.static/js/api.js"></script>
+    <script src="/.static/js/hideBoards.js"></script>
+
+    <script src="/.static/js/themes.js"></script>
+    <script src="/.static/js/draggable.js"></script>
+    <script src="/.static/js/watcher.js"></script>
+    <script src="/.static/js/favouriteBoards.js"></script>
+</html>

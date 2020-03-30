@@ -1,0 +1,1618 @@
+.topBoards a, #divLatestImages img, #divLatestPosts .latestPostCell,
+.innerPost, .sideCatalogCell, .markedPost, .sideCatalogMarkedCell,
+.catalogCell {
+    background: #282A2E;
+}
+
+.floatingMenu, #quick-reply table {
+    background: #1d1f21;
+}
+
+.markedPost, .sideCatalogMarkedCell {
+    background: rgba(0, 0, 0, .14);
+    border: 1px solid #111;
+}
+
+#divLatestPosts .latestPostCell, .innerPost, .sideCatalogCell, .catalogCell {
+    border: 1px solid #282a2e;
+}
+
+#quick-reply table, .modalDecorationPanel,
+.floatingMenu, #settingsFieldset, .reportFieldset {
+    border: 1px solid #282a2e;
+}
+
+#newPostFieldset {
+    border: none;
+}
+
+#newPostFieldset li {
+    font-size: 80%;
+    text-align: left;
+}
+
+#newPostFieldset ul {
+    padding-left: 15px;
+}
+
+.logoImg {
+    width: 350px;
+    height: auto;
+    margin: 50px 0 25px 0;
+}
+
+#newThreadText {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#hideThread {
+    font-size: 80%;
+}
+
+#belowHeader {
+    width: 80%;
+}
+
+#belowPost {
+    width: 450px;
+}
+
+#innerUtility {
+    margin: 1.3em;
+    margin-bottom: 0;
+    font-size: 80%;
+}
+
+#innerUtility.bottom {
+    margin: 0;
+}
+
+.captchaImage {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+
+.small {
+    font-size: 75%;
+    text-decoration: none;
+}
+
+.clearer {
+    clear: both;
+}
+
+.returnReplyLink {
+    font-size: 10px;
+}
+
+.returnReplyLink::before,
+.returnReplyLink::after {
+    color: #c5c8c6;
+}
+
+.returnReplyLink::before {
+    content: '['
+}
+
+.returnReplyLink::after {
+    content: ']'
+}
+
+.small a {
+    text-decoration: none;
+}
+
+#panelReferences a {
+    display: block;
+}
+
+.imgLink img, .latestImageCell img, .mediaCell img, .catalogCell img {
+    image-orientation: from-image;
+}
+
+.linkList a {
+    display: block;
+}
+
+#themeSelector {
+    font-size: 100%;
+}
+
+h3, p, label {
+    margin: 0.25em 0;
+}
+
+hr {
+    height: 0px;
+    border-width: 1px medium medium;
+    border-style: solid none none;
+    border-color: #282a2e;
+}
+
+a, .coloredIcon, .unhideButton, .embedButton, .checkedFavouriteButton:before,
+#selectedTab, #showFormsButton {
+    color: #ffc933;
+    cursor: pointer
+}
+
+#showFormsButton {
+    font-size: 80%;
+    float: right;
+    clear: both;
+}
+
+#showFormsButton::before {
+    content: '[';
+}
+
+#showFormsButton::after {
+    content: ']';
+}
+
+#showFormsButton::before, #showFormsButton::after {
+    color: #c5c8c6;
+}
+
+.coloredIcon::before {
+    font-family: 'Icons';
+}
+
+#navLinkSpan .coloredIcon:before, #navOptionsSpan .coloredIcon:before,
+#links .coloredIcon:before {
+    margin-right: 0.25em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, .glowOnHover:hover {
+    color: #5f89ac;
+}
+
+u {
+    text-decoration: underline;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+input, select, textarea {
+    border: 1px solid #aaa;
+    font-family: arial, helvetica;
+    font-size: 80%;
+}
+
+input[type=button], input[type=submit], button, .dropzone, .selectedCell
+{
+    border: 1px double #282a2e;
+    background: #16171A;
+    color: #c5c8c6;
+    font-family: arial, helvetica;
+    font-size: 80%;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.fileBrowser {
+    background: none;
+}
+
+/* TODO IMPORT ARIAL AND ALL OTHER FONTS */
+/* import resources here; external CSS, fonts, etc */
+@font-face {
+    font-family: 'Hack';
+    src: url('../hack-regular-webfont.eot?v=2.018');
+    src: url('../hack-regular-webfont.eot?#iefix&v=2.018')
+	    format('embedded-opentype'),
+	 url('../hack-regular-webfont.woff2?v=2.018') format('woff2'),
+	 url('../hack-regular-webfont.woff?v=2.018') format('woff'),
+	 url('../hack-regular-webfont.ttf?v=2.018') format('truetype'),
+	 url('../hack-regular-webfont.svg?v=2.018#hackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Icons';
+    src: url('../open-iconic.eot');
+    src: url('../open-iconic.eot?#iconic-sm') format('embedded-opentype'),
+	 url('../open-iconic.woff') format('woff'), url('../open-iconic.ttf')
+						       format('truetype'), url('../open-iconic.otf') format('opentype'),
+	 url('../open-iconic.svg#iconic-sm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "fink";
+  src: url("../FinkHeavy.eot"); /* IE9 Compat Modes */
+  src: url("../FinkHeavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../FinkHeavy.otf") format("opentype"), /* Open Type Font */
+    url("../FinkHeavy.svg") format("svg"), /* Legacy iOS */
+    url("../FinkHeavy.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../FinkHeavy.woff") format("woff"), /* Modern Browsers */
+    url("../FinkHeavy.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body styles, inherited by whole page */
+body {
+    color: #c5c8c6;
+    background: #1D1F21;
+    font-family: arial, helvetica;
+    font-size: 100%;
+    margin: 0px;
+}
+
+/* header and nav / top of page styles */
+header {
+    margin: 3em auto 0 auto;
+    text-align: center;
+}
+
+nav {
+    height: 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #282a2e;
+    border-bottom: 1px solid #111;
+    font-size: 70%;
+    text-align: center;
+    z-index: 1;
+}
+
+nav span, nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#navLinkSpan {
+    float: left;
+}
+
+#navOptionsSpan {
+    float: right;
+}
+
+#navLinkHome:before {
+    content: "\e078";
+}
+
+#navBoardList:before {
+    content: "\e03a";
+}
+
+#linkOverboard:before, #navOverboard:before {
+    content: "\e007";
+}
+
+#settingsButton:before {
+    content: "\e041";
+}
+
+#navDonate:before {
+    content: "\e053";
+}
+
+#navPosting:before {
+    content: "\e0b0";
+}
+
+#navMobile:before {
+    content: "\e0a6";
+}
+
+#navMod:before {
+    content: "\e020";
+}
+
+#navBlog:before {
+    content: "\e056";
+}
+
+#navIrc:before {
+    content: "\e032";
+}
+
+#navTwitter:before {
+    content: "\e0ca";
+}
+
+#navCatalog:before {
+    content: "\e072";
+}
+
+#linkRss:before {
+    content: "\e0b7";
+}
+
+#linkTop:before {
+    content: "\e012";
+}
+
+#linkBottom:before {
+    content: "\e00f";
+}
+
+#linkBack:before {
+    content: "\e003";
+}
+
+/* board list */
+.divPages {
+    display: -webkit-inline-box;
+    padding: 4px 8px 6px 8px;
+    border: 1px solid #111;
+    background: #282a2e;
+}
+
+/* Testing */
+
+/* index.html and various page box customizations  */
+
+.contentBox {
+    border: 1px solid #111;
+}
+
+.contentBox.spaced {
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin: 0;
+    padding: 3px 7px;
+    font-size: 20px;
+    background: #1D1F21;
+    background-image: url("https://i.imgur.com/HX6D1JL.png");
+    font-family: fink;
+    font-weight: 200;
+}
+
+#contentBoxInner {
+    padding: 10px;
+    font-size: 13px;
+    background: #282A2E;
+}
+
+.contentBox.left {
+    float: left;
+    width: 330px;
+}
+
+.contentBox.right {
+    float: right;
+    width: 330px;
+}
+
+.labelReplies, .labelImages, .labelPage, .labelFiles {
+    font-weight: bold;
+}
+
+#logoBox {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+/* end */
+
+/* Login Page */
+
+.contentBox.login {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login tr {
+    display: table-cell;
+}
+
+.login button {
+    font-size: 100%;
+}
+
+/* move me */
+.contentBox.other {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* move end */
+
+#labelContent {
+    background: #1D1F21;
+    border: 1px solid #111;
+    text-align: left;
+    padding: 0 5px 0 5px;
+    width: 55px;
+}
+
+#divRemember input {
+    vertical-align: sub;
+}
+
+#contentBoxInner input[type="button"],
+#contentBoxInner input[type="submit"],
+#contentBoxInner button {
+    margin-left: 4px;
+}
+
+
+#postingHr.loginPage {
+    margin: 5px auto 8px auto;
+}
+
+#contentBoxInner .small {
+    font-size: 85%;
+    font-weight: initial;
+    padding-left: 3px;
+}
+
+#contentBoxInner button,
+#contentBoxInner .hidden.reloadCaptchaButton,
+#contentBoxInner input[type="submit"] {
+    border: 1px solid #111;
+    background: #1D1F21;
+}
+
+#contentBoxInner #registerFormButton,
+#contentBoxInner #recoverFormButton {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* end login */
+
+/* Latest Postings Page */
+
+#settingsWrapper.latestPostings input {
+    display: inline;
+}
+
+/* end latestPostings */
+
+.quoteTooltip {
+    border: 1px solid #111;
+}
+
+#divPages, .divPages a {
+    font-size: 90%;
+}
+
+#divPages a::before, #divPages a::after, #threadOpen:after, #threadOpen:before, .labelStats {
+    color: #c5c8c6;
+}
+
+#divPages a::before {
+    content: '[';
+}
+
+#divPages a::after {
+    content: ']';
+}
+
+#divPages a {
+    text-decoration: none;
+    padding: 0 0.25em;
+    display: inline-block;
+}
+
+#actionsForm {
+    width: max-content;
+}
+
+/* End testing */
+
+a.rules:after {
+    font-family: Icons;
+    content: "\e052";
+    margin-right: 0.5em;
+    color: #81a2be;
+    height: 80%;
+    font-size: 80%;
+    padding-left: 0.25em;
+    vertical-align: middle;
+}
+
+/* markdown */
+.greenText {
+    color: #b5bd68;
+}
+
+.orangeText {
+    color: hotpink;
+}
+
+.redText {
+    color: #AF0A0F;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+span.spoiler {
+    background: #000;
+    color: #000;
+    padding: 0 1px;
+}
+
+.spoiler:hover {
+    color: #c5c8c6;
+    background: none;
+}
+
+.red {
+    color: #117743;
+}
+
+/* CSS for pages that deal with site and account settings and bans */
+#settingsWrapper {
+    text-align: center;
+    width: 80%;
+    margin: 2em auto;
+}
+
+#settingsFieldset {
+    padding: 1em;
+    display: inline-block;
+    text-align: left;
+}
+
+#settingsWrapper input {
+    display: block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.banners {
+    margin: 1em;
+    width: auto;
+    padding: 0.5em;
+}
+
+#settingsFieldset textarea {
+    display: block;
+    height: 5em;
+}
+
+#settingsFieldset label {
+    display: block;
+}
+
+#settingsFieldset label input {
+    display: inline-block;
+}
+
+#settingsWrapper .captchaDiv input {
+    display: inline-block;
+}
+
+.subCaptchaDiv {
+    text-align: left;
+}
+
+.captchaTimer {
+    font-size: 80%;
+}
+
+.wide, #postingForm input[type='text'], .modalTableBody input[type='text'],
+.modalTableBody select {
+    width: 100%;
+}
+
+/* ADDITIONS */
+
+#fieldMessage {
+    width: 244px;
+}
+
+#postingForm input[type="text"], #fieldPostingPassword {
+    min-width: 244px;
+    max-width: 244px;
+}
+
+#catalogPage #divTools {
+    float: right;
+    margin-top: 6px;
+}
+
+#catalogPage input {
+    vertical-align: top;
+}
+
+#catalogPage #innerUtilityBottom {
+    margin: 1.3em;
+}
+
+.boardHeader p, #catalogId, #overboardId {
+    color: #c5c8c6;
+    text-shadow: 1px 1px 1px rgba(167,170,168,0.6);
+    font-size: 200%;
+}
+
+.indicatorSfw::after {
+    content: '[SFW]';
+    font-size: 70%;
+    color: white;
+    font-weight: bold;
+    padding-left: 2px;
+    position: absolute;
+}
+
+#postingHr {
+    border-color: #c5c8c61a;
+    margin: 20px 0 14px 0;
+}
+
+#linkOverboard {
+    display: none;
+}
+
+#navBoardsSpan {
+    vertical-align: sub;
+}
+
+.linkLast {
+    display: none;
+}
+
+#paypal {
+    border: none;
+}
+
+#dynamicAnnouncement td {
+    vertical-align: top;
+}
+
+.important {
+    color: #ff0000;
+}
+
+#navLive .coloredIcon {
+    text-shadow: 0 0 5px;
+    animation: livebutton-rainbow 3s linear infinite;
+}
+
+#navLive {
+    display: none;
+}
+
+.labelYou {
+  color: #117743;
+  font-style: italic;
+  margin-right: 0.125rem;
+}
+
+.quoteLink.you:after {
+  content: " (You)";
+  font-size: 75%;
+  text-decoration: none;
+}
+
+/* END ADDITIONS */
+
+#redirect, #maint {
+    text-align: center;
+}
+
+#labelCaptchaId {
+    color: #ff0000;
+}
+
+#staticPageWrapper {
+    margin: 2em auto;
+    text-align: center;
+}
+
+/* footer styles */
+footer {
+    width: 100%;
+    margin: 3em 0px 2em 0px;
+    text-align: center;
+    font-size: x-small !important;
+}
+
+.innerPost, .markedPost {
+    display: inline-block;
+    padding: 0.25em;
+    max-width: 100%;
+}
+
+/* this has to go down here to override anything above it */
+.hidden {
+    display: none;
+}
+
+#settingsWrapper input.hidden {
+    display: none;
+}
+
+.floatingMenu {
+    padding: 0.25em;
+}
+
+.floatingMenu .headerLabel {
+    font-size: 80%;
+}
+
+.floatingMenu .header, .floatingMenu .headerLabel {
+    cursor: pointer;
+}
+
+#divRemember input {
+    display: inline;
+}
+
+#ownedDiv a, #volunteeredDiv a {
+    display: block;
+}
+
+#navBoardList::after {
+    content: 'Boards';
+}
+
+#navOverboard::after, #linkOverboard::after {
+    content: 'Overboard';
+}
+
+#linkSfwOver::after {
+    content: 'Overboard SFW';
+}
+
+#navDonate::after {
+    content: 'Donate';
+}
+#navPosting::after {
+    content: 'Posting';
+}
+
+#navLinkHome::after {
+    content: 'Home';
+}
+
+#watcherButton::after {
+    content: 'Watching';
+}
+
+#settingsButton::after {
+    content: 'Settings';
+}
+
+#links {
+    font-family: fink;
+    font-size: 12pt;
+    font-weight: 200;
+}
+
+#linkGlobalLogs::after {
+    content: 'Logs';
+}
+
+#linkArchives::after {
+    content: 'Archive';
+}
+
+#linkGraphs::after {
+    content: 'Daily Graphs';
+}
+
+#linkGlobalRules::after {
+    content: 'Global Rules';
+}
+
+#linkDonate::after {
+    content: 'Donate';
+}
+
+#linkIrc::after {
+    content: 'IRC';
+}
+
+#linkMobile::after {
+    content: 'Mobile App';
+}
+
+#linkLinks::after {
+    content: 'Links';
+}
+
+#linkAbout::after {
+    content: 'About';
+}
+
+#linkBoards::after {
+    content: 'Boards';
+}
+
+#navOptionsSpan a{
+    margin-top: 2px;
+}
+
+#linkBack::after {
+    content: 'Return';
+}
+
+#linkContact::after {
+    content: 'Contact';
+}
+
+#linkAccount::after {
+    content: 'Account';
+}
+
+#linkLogs::after {
+    content: 'Logs';
+}
+
+#linkTop::after {
+    content: 'Top';
+}
+
+#linkBottom::after {
+    content: 'Bottom';
+}
+
+#navCatalog::after {
+    content: 'Catalog';
+}
+
+#linkRss::after {
+    content: 'RSS';
+}
+
+@media only screen and (max-width: 812px) {
+    #navLinkSpan span, #navOptionsSpan span, legend, #settingsButton, #links span,
+    .hideMobile {
+	display: none;
+    }
+    #navLinkSpan a::after, #navOptionsSpan a::after, #links a::after {
+	content: '';
+    }
+    #navBoards {
+	display: none;
+    }
+
+    nav {
+	font-size: 115%;
+	height: auto;
+	padding: 2px 2px;
+    }
+    #themeSelector {
+	max-width: 100px;
+    }
+    .logoImg {
+	margin-top: 10px;
+    }
+    input, select, textarea {
+	font-size: 100%;
+    }
+    body {
+	font-size: 85%;
+	margin-top: 5px;
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 10px;
+	padding-left: 0;
+	padding-right: 0;
+    }
+    .captchaImage {
+	max-width: 100%;
+	height: auto;
+	max-height: 100px;
+    }
+}
+
+/* Yotsuba theme */
+.theme_yotsuba {
+    background: #ffe no-repeat;
+    color: maroon;
+    background-image: linear-gradient(to bottom,#fed6af 0,transparent 260px);
+}
+
+/* .theme_yotsuba #divLatestImages img */
+
+.theme_yotsuba .topBoards a,
+.theme_yotsuba .innerPost,
+.theme_yotsuba .sideCatalogCell,
+.theme_yotsuba .markedPost,
+.theme_yotsuba .sideCatalogMarkedCell,
+.theme_yotsuba .divPages {
+    background: #f0e0d6;
+}
+
+.theme_yotsuba .floatingMenu,
+.theme_yotsuba #quick-reply table,
+.theme_yotsuba .modalDecorationPanel {
+    background: #f0e0d6;
+    color: maroon;
+    border: 1px solid #800;
+}
+
+.theme_yotsuba .floatingMenu hr,
+.theme_yotsuba #quick-reply table hr {
+    color: #b86;
+}
+
+.theme_yotsuba .markedPost, .theme_yotsuba .sideCatalogMarkedCell {
+    background: #f0c0b0;
+    border: 1px solid #d99f91;
+}
+
+.theme_yotsuba .boardHeader p,
+.theme_yotsuba #catalogId,
+.theme_yotsuba #overboardId {
+    color: maroon;
+    text-shadow: 1px 1px 1px rgba(100,0,0,0.6);
+}
+
+.theme_yotsuba #labelDescription,
+.theme_yotsuba .linkSelf,
+.theme_yotsuba .linkQuote,
+.theme_yotsuba .labelStats,
+.theme_yotsuba .spoiler:hover {
+    color: maroon;
+}
+
+.theme_yotsuba hr {
+    border-top: 1px solid #d9bfb7;
+}
+
+.theme_yotsuba a,
+.theme_yotsuba .panelBacklinks a,
+.theme_yotsuba .coloredIcon,
+.theme_yotsuba .unhideButton,
+.theme_yotsuba .embedButton,
+.theme_yotsuba .checkedFavouriteButton::before,
+.theme_yotsuba #selectedTab,
+.theme_yotsuba #showFormsButton {
+    color: #00e
+}
+
+.theme_yotsuba a:hover,
+.theme_yotsuba .glowOnHover:hover,
+.theme_yotsuba .floatingMenu.extraMenu div:hover,
+.theme_yotsuba .floatingMenu.hideMenu div:hover {
+    color: #ff0000 !important;
+}
+
+.theme_yotsuba .labelSubject {
+    color: #cc1105;
+}
+
+.theme_yotsuba .noEmailName,
+.theme_yotsuba .noEmailName:hover {
+    color: #117743 !important;
+}
+
+.theme_yotsuba .labelRole,
+.theme_yotsuba .labelRole:before{
+    color: purple;
+}
+
+.theme_yotsuba nav {
+    background-color: rgba(240,224,214,0.98);
+    border-bottom: 1px solid #B86;
+}
+
+.theme_yotsuba #postingForm th,
+.theme_yotsuba .modalTableBody th,
+.theme_yotsuba .postingTypeBanner,
+.theme_yotsuba #quick-reply th {
+    background: #ea8;
+    border: 1px solid #800;
+}
+
+/* Work on this?*/
+.theme_yotsuba input[type="button"],
+.theme_yotsuba input[type="submit"],
+.theme_yotsuba button,
+.theme_yotsuba .dropzone,
+.theme_yotsuba selectedCell,
+.theme_yotsuba #contentBoxInner button,
+.theme_yotsuba #contentBoxInner .hidden.reloadCaptchaButton,
+.theme_yotsuba #contentBoxInner input[type="submit"] {
+    border: 1px double #800;
+    background: #fed;
+    color: maroon;
+}
+
+/* front page */
+.theme_yotsuba h2,
+.theme_yotsuba #divBoardsLegend,
+.theme_yotsuba #federatedText,
+.theme_yotsuba #labelContent,
+.theme_yotsuba #threadI,
+.theme_yotsuba #threadN,
+.theme_yotsuba #threadD,
+.theme_yotsuba #threadV
+{
+    background: #fca;
+}
+
+.theme_yotsuba #contentBoxInner {
+    background: #fff;
+}
+
+.theme_yotsuba .contentBox,
+.theme_yotsuba #divBoardsLegend .cellComponent,
+.theme_yotsuba #federatedText,
+.theme_yotsuba #labelContent,
+.theme_yotsuba #threadI,
+.theme_yotsuba #threadN,
+.theme_yotsuba #threadD,
+.theme_yotsuba #threadV,
+.theme_yotsuba #settingsFieldset {
+    border: 1px solid #800;
+}
+
+.theme_yotsuba #divLatestImages img,
+.theme_yotsuba #divLatestPosts .latestPostCell{
+    background: white;
+    border: 1px solid transparent;
+}
+/* end front page */
+
+.theme_yotsuba #contentBoxInner #labelName {
+    text-shadow: none;
+}
+
+.theme_yotsuba #divBoards .boardsCell:nth-child(2n),
+.theme_yotsuba #contentBoxInner.federatedTable .linkFederated:nth-child(2n+1),
+.theme_yotsuba #contentBoxInner #divThreads div:nth-child(2n) {
+    background-color: #ede2d4;
+}
+
+.theme_yotsuba #dynamicAnnouncement {
+    border-color: #d9bfb7;
+}
+
+.theme_yotsuba .indicatorSfw:after {
+    color: maroon;
+}
+
+.theme_yotsuba .innerPost,
+.theme_yotsuba .divPages,
+.theme_yotsuba .reportFieldset,
+.theme_yotsuba .sideCatalogCell {
+    border: 1px solid #d9bfb7;
+}
+
+.theme_yotsuba .quoteTooltip {
+    border: none;
+    border-top: 1px solid #d9bfb7;
+    border-left: 1px solid #d9bfb7;
+}
+
+.theme_yotsuba .innerPost {
+    border-top: none;
+    border-left: none;
+}
+
+.theme_yotsuba #divPages a::before,
+.theme_yotsuba #divPages a::after,
+.theme_yotsuba #linkNext::before,
+.theme_yotsuba #linkNext::after,
+.theme_yotsuba #linkPrevious::before,
+.theme_yotsuba #linkPrevious::after,
+.theme_yotsuba #divPagesSpacer,
+.theme_yotsuba #navLinkSpan,
+.theme_yotsuba #navOptionsSpan {
+    color: #b86;
+}
+
+.theme_yotsuba nav .coloredIcon,
+.theme_yotsuba #questionBox:before,
+.theme_yotsuba #questionBox:after,
+.theme_yotsuba #showFederatedButton:before,
+.theme_yotsuba #showFederatedButton:after,
+.theme_yotsuba .returnReplyLink:before,
+.theme_yotsuba .returnReplyLink:after,
+.theme_yotsuba #showFormsButton:before,
+.theme_yotsuba #showFormsButton:after,
+.theme_yotsuba #threadOpen:before,
+.theme_yotsuba #threadOpen:after,
+.theme_yotsuba .opHead .coloredIcon,
+.theme_yotsuba .postInfo .coloredIcon {
+    color: maroon;
+}
+
+.theme_yotsuba .selectedCell {
+    background: #ea8;
+    color: maroon;
+    border: 1px solid #800;
+}
+
+.theme_yotsuba .removeButton {
+    color: maroon;
+}
+
+.theme_yotsuba #links {
+    font-family: arial;
+    font-size: 75%;
+}
+
+.theme_yotsuba h2{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Yotsuba B theme */
+.theme_yotsuba_b {
+    background: #eef2ff no-repeat;
+    color: #000;
+    background-image: linear-gradient(to bottom, #d1d5ee 0, transparent 260px);
+}
+
+/* .theme_yotsuba_b #divLatestImages img */
+
+.theme_yotsuba_b .topBoards a,
+.theme_yotsuba_b .innerPost,
+.theme_yotsuba_b .sideCatalogCell,
+.theme_yotsuba_b .markedPost,
+.theme_yotsuba_b .sideCatalogMarkedCell,
+.theme_yotsuba_b .divPages {
+    background: #d6daf0;
+}
+
+.theme_yotsuba_b .floatingMenu,
+.theme_yotsuba_b #quick-reply table,
+.theme_yotsuba_b .modalDecorationPanel {
+    background: #eef2ff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.theme_yotsuba_b .floatingMenu hr,
+.theme_yotsuba_b #quick-reply table hr {
+    color: #000;
+}
+
+.theme_yotsuba_b .markedPost, .theme_yotsuba_b .sideCatalogMarkedCell {
+    background: #d6bad0;
+    border: 1px solid #ba9dbf;
+}
+
+.theme_yotsuba_b .boardHeader p,
+.theme_yotsuba_b #catalogId,
+.theme_yotsuba_b #overboardId {
+    color: #af0a0f;
+    text-shadow: 1px 1px 1px rgba(105,10,15,0.6);
+}
+
+.theme_yotsuba_b #favouriteButton {
+    color: #af0a0f;
+}
+
+.theme_yotsuba_b .linkSelf,
+.theme_yotsuba_b .linkQuote,
+.theme_yotsuba_b .labelStats,
+.theme_yotsuba_b .spoiler:hover,
+.theme_yotsuba_b .returnReplyLink:before,
+.theme_yotsuba_b .returnReplyLink:after {
+    color: #000;
+}
+
+.theme_yotsuba_b hr {
+    border-top: 1px solid #b7c5d9;
+}
+
+.theme_yotsuba_b a,
+.theme_yotsuba_b .panelBacklinks a,
+.theme_yotsuba_b .coloredIcon,
+.theme_yotsuba_b .unhideButton,
+.theme_yotsuba_b .embedButton,
+.theme_yotsuba_b .checkedFavouriteButton::before,
+.theme_yotsuba_b #selectedTab,
+.theme_yotsuba_b #showFormsButton {
+    color: #34345C;
+}
+
+.theme_yotsuba_b a:hover,
+.theme_yotsuba_b .glowOnHover:hover,
+.theme_yotsuba_b .floatingMenu.extraMenu div:hover,
+.theme_yotsuba_b .floatingMenu.hideMenu div:hover {
+    color: #d00 !important;
+}
+
+.theme_yotsuba_b .labelSubject {
+    color: #0f0c5d;
+}
+
+.theme_yotsuba_b .noEmailName,
+.theme_yotsuba_b .noEmailName:hover {
+    color: #117743 !important;
+}
+
+.theme_yotsuba_b .labelRole,
+.theme_yotsuba_b .labelRole:before{
+    color: purple;
+}
+
+.theme_yotsuba_b nav {
+    background-color: #d1d5ee;
+    border-bottom: 1px solid #89A;
+}
+
+.theme_yotsuba_b #postingForm th,
+.theme_yotsuba_b .modalTableBody th,
+.theme_yotsuba_b .postingTypeBanner,
+.theme_yotsuba_b #quick-reply th {
+    background: #98e;
+    border: 1px solid #000;
+}
+
+/* Work on this?*/
+.theme_yotsuba_b input[type="button"],
+.theme_yotsuba_b input[type="submit"],
+.theme_yotsuba_b button,
+.theme_yotsuba_b .dropzone,
+.theme_yotsuba_b selectedCell,
+.theme_yotsuba_b #contentBoxInner button,
+.theme_yotsuba_b #contentBoxInner .hidden.reloadCaptchaButton,
+.theme_yotsuba_b #contentBoxInner input[type="submit"] {
+    border: 1px double #000;
+    background: #eceff6;
+    color: #000;
+}
+
+/* front page */
+.theme_yotsuba_b h2,
+.theme_yotsuba_b #divBoardsLegend,
+.theme_yotsuba_b #federatedText,
+.theme_yotsuba_b #labelContent,
+.theme_yotsuba_b #threadI,
+.theme_yotsuba_b #threadN,
+.theme_yotsuba_b #threadD,
+.theme_yotsuba_b #threadV
+{
+    background: #98e;
+}
+
+.theme_yotsuba_b #contentBoxInner {
+    background: white;
+}
+
+.theme_yotsuba_b .contentBox,
+.theme_yotsuba_b #divBoardsLegend .cellComponent,
+.theme_yotsuba_b #federatedText,
+.theme_yotsuba_b #labelContent,
+.theme_yotsuba_b #threadI,
+.theme_yotsuba_b #threadN,
+.theme_yotsuba_b #threadD,
+.theme_yotsuba_b #threadV,
+.theme_yotsuba_b #settingsFieldset {
+    border: 1px solid #000;
+}
+
+.theme_yotsuba_b #divLatestImages img,
+.theme_yotsuba_b #divLatestPosts .latestPostCell{
+    background: white;
+    border: 1px solid transparent;
+}
+/* end front page */
+
+.theme_yotsuba_b #contentBoxInner #labelName {
+    text-shadow: none;
+}
+
+.theme_yotsuba_b #divBoards .boardsCell:nth-child(2n),
+.theme_yotsuba_b #contentBoxInner.federatedTable .linkFederated:nth-child(2n+1),
+.theme_yotsuba_b #contentBoxInner #divThreads div:nth-child(2n) {
+    background-color: #e0e5f6;
+}
+
+.theme_yotsuba_b #dynamicAnnouncement {
+    border-color: #b7c5d9;
+}
+
+.theme_yotsuba_b .indicatorSfw:after {
+    color: navy;
+}
+
+.theme_yotsuba_b .innerPost,
+.theme_yotsuba_b .divPages,
+.theme_yotsuba_b .reportFieldset,
+.theme_yotsuba_b .sideCatalogCell {
+    border: 1px solid #b7c5d9;
+}
+
+.theme_yotsuba_b .quoteTooltip {
+    border: none;
+    border-top: 1px solid #b7c5d9;
+    border-left: 1px solid #b7c5d9;
+}
+
+.theme_yotsuba_b .innerPost {
+    border-top: none;
+    border-left: none;
+}
+
+.theme_yotsuba_b #divPages a::before,
+.theme_yotsuba_b #divPages a::after,
+.theme_yotsuba_b #linkNext::before,
+.theme_yotsuba_b #linkNext::after,
+.theme_yotsuba_b #linkPrevious::before,
+.theme_yotsuba_b #linkPrevious::after,
+.theme_yotsuba_b #divPagesSpacer,
+.theme_yotsuba_b #navLinkSpan,
+.theme_yotsuba_b #navOptionsSpan {
+    color: #89A;
+}
+
+.theme_yotsuba_b nav .coloredIcon,
+.theme_yotsuba_b #questionBox:before,
+.theme_yotsuba_b #questionBox:after,
+.theme_yotsuba_b #showFederatedButton:before,
+.theme_yotsuba_b #showFederatedButton:after,
+.theme_yotsuba_b .returnReplyLink:before,
+.theme_yotsuba_b .returnReplyLink:after,
+.theme_yotsuba_b #showFormsButton:before,
+.theme_yotsuba_b #showFormsButton:after,
+.theme_yotsuba_b #threadOpen:before,
+.theme_yotsuba_b #threadOpen:after,
+.theme_yotsuba_b .opHead .coloredIcon,
+.theme_yotsuba_b .Postinfo .coloredIcon {
+    color: #34345C;
+}
+
+.theme_yotsuba_b .selectedCell {
+    background: #98e;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.theme_yotsuba_b .removeButton {
+    color: #000;
+}
+
+.theme_yotsuba_b #links {
+    font-family: arial;
+    font-size: 75%;
+}
+
+.theme_yotsuba_b h2{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Yotsuba theme */
+.theme_warosu {
+    background: #eef8f0 no-repeat;
+    color: #333;
+    background-image: linear-gradient(to bottom,#cfecd1 0,transparent 260px);
+}
+
+/* .theme_warosu #divLatestImages img */
+
+.theme_warosu .topBoards a,
+.theme_warosu .innerPost,
+.theme_warosu .sideCatalogCell,
+.theme_warosu .markedPost,
+.theme_warosu .sideCatalogMarkedCell,
+.theme_warosu .divPages {
+    background: #d6f0da;
+}
+
+.theme_warosu .floatingMenu,
+.theme_warosu #quick-reply table,
+.theme_warosu .modalDecorationPanel {
+    background: #cfecd1;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.theme_warosu .floatingMenu hr,
+.theme_warosu #quick-reply table hr {
+    color: #b86;
+}
+
+.theme_warosu .markedPost, .theme_warosu .sideCatalogMarkedCell {
+    background: #bbe6c2;
+    border: 1px solid rgba(154,163,159,0.8);
+}
+
+.theme_warosu .boardHeader p,
+.theme_warosu #catalogId,
+.theme_warosu #overboardId {
+    color: maroon;
+    text-shadow: 1px 1px 1px rgba(100,0,0,0.6);
+}
+
+.theme_warosu .linkSelf,
+.theme_warosu .linkQuote,
+.theme_warosu .labelStats,
+.theme_warosu .spoiler:hover {
+    color: #333;
+}
+
+.theme_warosu hr {
+    border-top: 1px solid rgba(0,0,0,0.11);
+}
+
+.theme_warosu a,
+.theme_warosu .panelBacklinks a,
+.theme_warosu .coloredIcon,
+.theme_warosu .unhideButton,
+.theme_warosu .embedButton,
+.theme_warosu .checkedFavouriteButton::before,
+.theme_warosu #selectedTab,
+.theme_warosu #showFormsButton {
+    color: #358;
+}
+
+.theme_warosu a:hover,
+.theme_warosu .glowOnHover:hover,
+.theme_warosu .floatingMenu.extraMenu div:hover,
+.theme_warosu .floatingMenu.hideMenu div:hover {
+    color: #DD0000 !important;
+}
+
+.theme_warosu .labelSubject {
+    color: #0f0c5d;
+}
+
+.theme_warosu .noEmailName,
+.theme_warosu .noEmailName:hover {
+    color: #117743 !important;
+}
+
+.theme_warosu .labelRole,
+.theme_warosu .labelRole:before{
+    color: purple;
+}
+
+.theme_warosu nav {
+    background-color: #cfecd1;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.theme_warosu #postingForm th,
+.theme_warosu .modalTableBody th,
+.theme_warosu .postingTypeBanner,
+.theme_warosu #quick-reply th {
+    background: #bbe6c2;
+    border: 1px solid #333;
+}
+
+/* Work on this?*/
+.theme_warosu input[type="button"],
+.theme_warosu input[type="submit"],
+.theme_warosu button,
+.theme_warosu .dropzone,
+.theme_warosu selectedCell,
+.theme_warosu #contentBoxInner button,
+.theme_warosu #contentBoxInner .hidden.reloadCaptchaButton,
+.theme_warosu #contentBoxInner input[type="submit"] {
+    border: 1px solid #333;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+}
+
+/* front page */
+.theme_warosu h2,
+.theme_warosu #divBoardsLegend,
+.theme_warosu #federatedText,
+.theme_warosu #labelContent,
+.theme_warosu #threadI,
+.theme_warosu #threadN,
+.theme_warosu #threadD,
+.theme_warosu #threadV
+{
+    background: #bbe6c2;
+}
+
+.theme_warosu #contentBoxInner {
+    background: #fff;
+}
+
+.theme_warosu .contentBox,
+.theme_warosu #divBoardsLegend .cellComponent,
+.theme_warosu #federatedText,
+.theme_warosu #labelContent,
+.theme_warosu #threadI,
+.theme_warosu #threadN,
+.theme_warosu #threadD,
+.theme_warosu #threadV,
+.theme_warosu #settingsFieldset {
+    border: 1px solid #333;
+}
+
+.theme_warosu #divLatestImages img,
+.theme_warosu #divLatestPosts .latestPostCell{
+    background: white;
+    border: 1px solid transparent;
+}
+/* end front page */
+
+.theme_warosu #contentBoxInner #labelName {
+    text-shadow: none;
+}
+
+.theme_warosu #divBoards .boardsCell:nth-child(2n),
+.theme_warosu #contentBoxInner.federatedTable .linkFederated:nth-child(2n+1),
+.theme_warosu #contentBoxInner #divThreads div:nth-child(2n) {
+    background-color: #d6f0da;
+}
+
+.theme_warosu #dynamicAnnouncement {
+    border-color: rgba(0,0,0,0.11);
+}
+
+.theme_warosu .indicatorSfw:after {
+    color: #117743;
+}
+
+.theme_warosu .innerPost,
+.theme_warosu .divPages,
+.theme_warosu .reportFieldset,
+.theme_warosu .sideCatalogCell {
+    border: 1px solid rgba(154,163,159,0.2);
+}
+
+.theme_warosu .quoteTooltip {
+    border: none;
+    border-top: 1px solid rgba(154,163,159,0.2);
+    border-left: 1px solid rgba(154,163,159,0.2);
+}
+
+.theme_warosu .innerPost {
+    border-top: none;
+    border-left: none;
+}
+
+.theme_warosu #divPages a::before,
+.theme_warosu #divPages a::after,
+.theme_warosu #linkNext::before,
+.theme_warosu #linkNext::after,
+.theme_warosu #linkPrevious::before,
+.theme_warosu #linkPrevious::after,
+.theme_warosu #divPagesSpacer,
+.theme_warosu #navLinkSpan,
+.theme_warosu #navOptionsSpan {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.theme_warosu nav .coloredIcon,
+.theme_warosu #questionBox:before,
+.theme_warosu #questionBox:after,
+.theme_warosu #showFederatedButton:before,
+.theme_warosu #showFederatedButton:after,
+.theme_warosu .returnReplyLink:before,
+.theme_warosu .returnReplyLink:after,
+.theme_warosu #showFormsButton:before,
+.theme_warosu #showFormsButton:after,
+.theme_warosu #threadOpen:before,
+.theme_warosu #threadOpen:after,
+.theme_warosu .opHead .coloredIcon,
+.theme_warosu .postInfo .coloredIcon {
+    color: #358;
+}
+
+.theme_warosu #links {
+    font-family: arial;
+    font-size: 75%;
+}
+
+.theme_warosu h2{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}

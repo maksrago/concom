@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script type="text/javascript" id="dynamicAnalytics"></script>
+	<title>Archive</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/.static/css/global.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/index.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/watcher.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/posting.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+	<script src="/.static/js/themeLoader.js"></script>
+
+	<nav id="dynamicHeader"></nav>
+
+	<div id="indexWrapper">
+
+            <div id="logoBox" class="title">
+		<a href="/">
+		    <img src="/.static/logo.png" class="logoImg" alt="logo" />
+		</a>
+            </div>
+
+	    <div id="dynamicLinks"></div>
+
+	    <div class="contentBox">
+		<h2>Archive</h2>
+		<div id="contentBoxInner">
+		    <form
+			action="/archives.js"
+				method="GET">
+			Boards:
+			<input
+			    name="boards"
+			    id="fieldBoards"
+			    type="text">
+
+			<button type="submit">Filter</button>
+		    </form>
+
+		    <div id="divThreads">
+			<div id="divLegend">
+			    <span id="threadI">ID</span>
+			    <span id="threadN">Name</span>
+			    <span id="threadD">Date</span>
+			    <span id="threadV"></span>
+			</div>
+		    </div>
+		    <div id="divPages"></div>
+		</div>
+	    </div>
+
+	</div>
+
+	<footer id="dynamicFooter"></footer>
+
+    </body>
+
+    <script src="/.static/js/api.js"></script>
+    <script src="/.static/js/themes.js"></script>
+    <script src="/.static/js/draggable.js"></script>
+    <script src="/.static/js/watcher.js"></script>
+    <script src="/.static/js/favouriteBoards.js"></script>
+
+</html>

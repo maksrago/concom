@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script type="text/javascript" id="dynamicAnalytics"></script>
+	<title>ConCom</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/.static/css/global.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/index.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/watcher.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/posting.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+	<script src="/.static/js/themeLoader.js"></script>
+
+	<nav id="dynamicHeader"></nav>
+
+	<div id="indexWrapper">
+
+            <div id="logoBox" class="title">
+		<a href="/">
+		    <img src="/.static/logo.png" class="logoImg" alt="logo" />
+		</a>
+            </div>
+
+            <div id="infoBox" class="title">
+		<p></p>
+            </div>
+
+	    <div id="dynamicLinks"></div>
+
+	    <div id="announcementWrapper">
+		<div id="dynamicAnnouncement"></div>
+	    </div>
+
+	    <div class="contentBox spaced">
+		<h2>Welcome</h2>
+		<div id="contentBoxInner">
+		    <p>
+		      ConCom or ConnectionCommunity is an imageboard that allows anyone to create a board pertaining to a community or a topic. Users by default are annonymous, and can post a variety of different types of files. ConnectionCommunity makes it incredible easy and simple for anyone to talk about anything.
+		    </p>
+		</div>
+	    </div>
+
+	    <div class="contentBox spaced">
+		<h2>Boards</h2>
+		<div id="contentBoxInner">
+		    <div class="contentRow">
+			<div class="contentColumn">
+			  <a href="/meta" class="indicatorSfw">ConCom Discussion</a>
+			</div>
+			
+			<div class="contentColumn">
+			  <a href="/tech" class="indicatorSfw">Technology</a>
+			</div>
+			
+			<div class="contentColumn">
+			    <a href="/wholesome" class="indicatorSfw">Wholesome Memes</a>
+			</div>
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="contentBox left spaced">
+		<h2>Latest Images</h2>
+		<div id="contentBoxInner">
+		    <div id="divLatestImages">
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="contentBox right spaced">
+		<h2>Latest Posts</h2>
+		<div id="contentBoxInner">
+		    <div id="divLatestPosts">
+		    </div>
+		</div>
+	    </div>
+
+	    <div id="divStats">
+		<div class="contentBox">
+		    <h2>Stats</h2>
+		    <div id="contentBoxInner">
+			<span><b>Total Posts:</b> <span id="labelTotalPosts"></span></span><br>
+			<span><b>Posts in Last Hour:</b> <span id="labelTotalPPH"></span></span><br>
+			<span><b>Active Content:</b> <span id="labelTotalSize"></span></span>
+			<div id="irrelevantStats">
+			    <span>/</span> <span>Unique recent IPs: <span id="labelTotalIps"></span></span>
+			    <span>/</span> <span>Total boards: <span id="labelTotalBoards"></span></span>
+			    <span>/</span> <span>Media files stored: <span id="labelTotalFiles"></span></span>
+			    <span>]</span>
+			</div>
+		    </div>
+		</div>
+	    </div>
+
+            <div id="divBoards" class="topBoards title"></div>
+
+	</div>
+
+	<footer id="dynamicFooter"></footer>
+
+    </body>
+
+    <script src="/.static/js/api.js"></script>
+    <script src="/.static/js/themes.js"></script>
+    <script src="/.static/js/draggable.js"></script>
+    <script src="/.static/js/watcher.js"></script>
+    <script src="/.static/js/favouriteBoards.js"></script>
+
+</html>

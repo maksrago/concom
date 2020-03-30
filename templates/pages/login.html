@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<script type="text/javascript" id="dynamicAnalytics"></script>
+	<title>Login</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/.static/css/global.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/index.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/watcher.css" type="text/css" rel="stylesheet" />
+	<link href="/.static/css/posting.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+	<script src="/.static/js/themeLoader.js"></script>
+
+	<nav id="dynamicHeader"></nav>
+
+	<div id="indexWrapper">
+
+            <div id="logoBox" class="title">
+		<a href="/">
+                    <img src="/.static/logo.png" class="logoImg" alt="logo" />
+		</a>
+            </div>
+
+            <div id="dynamicLinks"></div>
+
+            <div class="contentBox spaced login">
+		<h2>Login</h2>
+		<div id="contentBoxInner">
+                    <form action="/login.js" enctype="multipart/form-data" method="post">
+
+			<table>
+                            <tr>
+				<th id="labelContent"><span id="loginText">Username</span></th>
+				<th>
+                                    <input type="text" name="login" class="loginField" id="loginFieldLogin">
+				</th>
+                            </tr>
+                            <tr>
+				<th id="labelContent"><span id="loginText">Password</span></th>
+
+				<th>
+                                    <input type="password" class="loginField" id="loginFieldPassword" name="password">
+				</th>
+                            </tr>
+			    <tr>
+				<th><button type="submit" id="loginFormButton">Login</button></th>
+			    </tr>
+
+			</table>
+
+
+
+			<div id="divRemember">
+			    <input type="checkbox" name="remember" class="loginField" id="checkboxRemember"> Remember me
+			</div>
+
+                    </form>
+		</div>
+            </div>
+
+            <div class="contentBox spaced login" id="divCreation">
+		<h2>Register</h2>
+		<div id="contentBoxInner">
+
+                    <form action="/registerAccount.js" enctype="multipart/form-data" method="post">
+
+			<table>
+
+                            <tr>
+				<th id="labelContent"><span id="loginText">Username</span></th>
+				<th>
+                                    <input type="text" name="login" class="registerField" id="registerFieldLogin">
+				</th>
+                            </tr>
+
+                            <tr>
+				<th id="labelContent"><span id="loginPassword">Password</span></th>
+
+				<th>
+                                    <input type="password" class="registerField" id="registerFieldPassword" name="password">
+				</th>
+                            </tr>
+
+                            <tr>
+				<th id="labelContent"><span id="loginRegister">Email</span></th>
+				<th>
+                                    <input type="email" class="registerField" id="registerFieldEmail" name="email">
+				</th>
+                            </tr>
+			</table>
+
+			<hr id="postingHr" class="loginPage">
+
+			<div class="captchaDiv">
+
+                            <img id="captchaImage" class="captchaImage" src="/captcha.js">
+
+                            <br>
+                            <input type="button" class="hidden reloadCaptchaButton" onclick="captchaUtils.reloadCaptcha()" value="Reload">
+                            <span class="captchaTimer"></span>
+
+                            <br>
+
+			    <table>
+				<tr>
+				<th id="labelContent"><span id="loginPassword">Answer</span></th>
+				<th><input name="captcha" type="text" class="captchaField registerField" id="fieldCaptcha"><a class="small" href="/noCookieCaptcha.js">no cookies?</a></th>
+				</tr>
+			    </table>
+
+			</div>
+
+			<hr id="postingHr" class="loginPage">
+
+			<button type="submit" id="registerFormButton">Register</button>
+
+                    </form>
+		</div>
+            </div>
+
+            <div class="contentBox login">
+		<h2>Forgot Password</h2>
+		<div id="contentBoxInner">
+                    <div id="divRecover">
+			<form action="/requestAccountRecovery.js" enctype="multipart/form-data" method="post">
+
+			    <table>
+				<tr>
+				    <th id="labelContent"><span id="loginText">Username</span></th>
+				    <th>
+					<input type="text" name="login" class="recoverField" id="recoverFieldLogin">
+				    </th>
+				</tr>
+			    </table>
+
+			    <hr id="postingHr" class="loginPage">
+
+                            <div class="captchaDiv">
+
+				<img id="captchaImageRecover" class="captchaImage" src="/captcha.js">
+
+				<br>
+				<input type="button" class="hidden reloadCaptchaButton" onclick="captchaUtils.reloadCaptcha()" value="Reload">
+				<span class="captchaTimer"></span>
+
+				<table>
+				    <tr>
+					<th id="labelContent"><span id="loginPassword">Answer</span></th>
+					<th><input name="captcha" type="text" class="captchaField recoverField" id="fieldCaptchaRecover"><a class="small" href="/noCookieCaptcha.js">no cookies?</a></th>
+				    </tr>
+				</table>
+
+                            </div>
+
+			    <hr id="postingHr" class="loginPage">
+
+                            <button type="submit" id="recoverFormButton">Request recovery</button>
+
+			</form>
+                    </div>
+		</div>
+            </div>
+	</div>
+	</div>
+
+	</div>
+
+	<footer id="dynamicFooter"></footer>
+
+    </body>
+
+    <script src="/.static/js/api.js"></script>
+    <script src="/.static/js/login.js"></script>
+    <script src="/.static/js/captchaUtils.js"></script>
+    <script src="/.static/js/themes.js"></script>
+    <script src="/.static/js/draggable.js"></script>
+    <script src="/.static/js/watcher.js"></script>
+    <script src="/.static/js/favouriteBoards.js"></script>
+
+</html>
