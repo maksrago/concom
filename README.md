@@ -4,7 +4,7 @@ ConCom is the offical frontend for [concom.live](https://concom.live), this fron
 and lightweight.
 
 ## Features
-*ConCom features several additions to PenumbraLynx, such as:*
+*ConCom features:*
   - 3 additional themes (Yotsuba, Yotsuba B, and Warosu)
   - Additional embedding support for BitChute and Invidio.
   - An additional file in `~/static/` that acts as a board directory
